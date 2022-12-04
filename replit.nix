@@ -1,5 +1,7 @@
 { pkgs }: {
   deps = [
+    pkgs.sudo
+    pkgs.gnupg
     pkgs.nano
     pkgs.vim
     pkgs.python38Full

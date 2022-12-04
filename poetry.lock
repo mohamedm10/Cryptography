@@ -125,6 +125,20 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
+name = "gnupg"
+version = "2.3.1"
+description = "A Python wrapper for GnuPG"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+psutil = ">=1.2.1"
+
+[package.extras]
+docs = ["Sphinx (>=1.1)", "sphinxcontrib-fulltoc (==1.0)"]
+
+[[package]]
 name = "idna"
 version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -243,6 +257,17 @@ python-versions = ">=3.6"
 [package.extras]
 testing = ["pytest-benchmark", "pytest"]
 dev = ["tox", "pre-commit"]
+
+[[package]]
+name = "psutil"
+version = "5.9.4"
+description = "Cross-platform lib for process and system monitoring in Python."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.extras]
+test = ["ipaddress", "mock", "enum34", "pywin32", "wmi"]
 
 [[package]]
 name = "pycryptodome"
@@ -486,7 +511,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "flake8 
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8.0,<3.9"
-content-hash = "c677ac63513966cab86eef5fc36963cff99a66004ed22949e7bae5a439e0cbf5"
+content-hash = "f704c6d56d258f9752a06c79c9271bca018244088a7e45fe19250afd64b17b47"
 
 [metadata.files]
 aiohttp = []
@@ -500,6 +525,7 @@ colorama = []
 debugpy = []
 flask = []
 frozenlist = []
+gnupg = []
 idna = []
 importlib-metadata = []
 itsdangerous = []
@@ -511,6 +537,7 @@ numpy = []
 packaging = []
 parso = []
 pluggy = []
+psutil = []
 pycryptodome = []
 pyflakes = []
 pyparsing = []
